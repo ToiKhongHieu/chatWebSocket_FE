@@ -1,11 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router";
 import App from "../App";
+import ChatPage from "../components/ChatPage";
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/chat" element={<h1>chat router</h1>} />
+      <Route path="/chat" element={<ChatPage />} />
       <Route path="/about" element={<h1>about router</h1>} />
       <Route path="*" element={<h1>404</h1>} />
     </Routes>
